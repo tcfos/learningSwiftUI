@@ -2,8 +2,6 @@
 //  ContentView.swift
 //  learningSwiftUI
 //
-//  Created by Vogel, Andreas on 02.01.20.
-//  Copyright © 2020 Vogel, Andreas. All rights reserved.
 //
 
 import SwiftUI

@@ -14,6 +14,8 @@
 		505F053D23BDFCA90032B776 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505F053C23BDFCA90032B776 /* Preview Assets.xcassets */; };
 		505F054023BDFCA90032B776 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 505F053E23BDFCA90032B776 /* LaunchScreen.storyboard */; };
 		505F054B23BDFCA90032B776 /* learningSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F054A23BDFCA90032B776 /* learningSwiftUITests.swift */; };
+		505F055623BDFCD00032B776 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F055523BDFCD00032B776 /* Storage.swift */; };
+		505F055823BDFE620032B776 /* PersistenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F055723BDFE620032B776 /* PersistenceTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,9 @@
 		505F054623BDFCA90032B776 /* learningSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = learningSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		505F054A23BDFCA90032B776 /* learningSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learningSwiftUITests.swift; sourceTree = "<group>"; };
 		505F054C23BDFCAA0032B776 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		505F055523BDFCD00032B776 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		505F055723BDFE620032B776 /* PersistenceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceTest.swift; sourceTree = "<group>"; };
+		505F055923BE2D640032B776 /* learningSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = learningSwiftUI.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +84,11 @@
 		505F053223BDFCA50032B776 /* learningSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				505F055923BE2D640032B776 /* learningSwiftUI.entitlements */,
 				505F053323BDFCA50032B776 /* AppDelegate.swift */,
 				505F053523BDFCA50032B776 /* SceneDelegate.swift */,
 				505F053723BDFCA50032B776 /* ContentView.swift */,
+				505F055523BDFCD00032B776 /* Storage.swift */,
 				505F053923BDFCA90032B776 /* Assets.xcassets */,
 				505F053E23BDFCA90032B776 /* LaunchScreen.storyboard */,
 				505F054123BDFCA90032B776 /* Info.plist */,
@@ -102,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				505F054A23BDFCA90032B776 /* learningSwiftUITests.swift */,
+				505F055723BDFE620032B776 /* PersistenceTest.swift */,
 				505F054C23BDFCAA0032B776 /* Info.plist */,
 			);
 			path = learningSwiftUITests;
@@ -209,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				505F053423BDFCA50032B776 /* AppDelegate.swift in Sources */,
+				505F055623BDFCD00032B776 /* Storage.swift in Sources */,
 				505F053623BDFCA50032B776 /* SceneDelegate.swift in Sources */,
 				505F053823BDFCA50032B776 /* ContentView.swift in Sources */,
 			);
@@ -219,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				505F054B23BDFCA90032B776 /* learningSwiftUITests.swift in Sources */,
+				505F055823BDFE620032B776 /* PersistenceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = learningSwiftUI/learningSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"learningSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 38NDJTMNK5;
@@ -382,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = learningSwiftUI/learningSwiftUI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"learningSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 38NDJTMNK5;
