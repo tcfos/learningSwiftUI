@@ -43,6 +43,7 @@
 		505F055523BDFCD00032B776 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		505F055723BDFE620032B776 /* PersistenceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceTest.swift; sourceTree = "<group>"; };
 		505F055923BE2D640032B776 /* learningSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = learningSwiftUI.entitlements; sourceTree = "<group>"; };
+		7E4F6A2223BE384500530294 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +94,7 @@
 				505F053E23BDFCA90032B776 /* LaunchScreen.storyboard */,
 				505F054123BDFCA90032B776 /* Info.plist */,
 				505F053B23BDFCA90032B776 /* Preview Content */,
+				7E4F6A2223BE384500530294 /* README.md */,
 			);
 			path = learningSwiftUI;
 			sourceTree = "<group>";

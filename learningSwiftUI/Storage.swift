@@ -4,13 +4,14 @@
 import SwiftUI
 import Foundation
 
-var APPGROUP : String = "group.org.tcfos.callbycolor"
+var APPGROUP : String = "group.org.yourappgroup" // edit this accordingly
 
 class storage {
     fileprivate let fileName = "data.out"
     enum StorageError: Error {
         case noSuchFile
     }
+    
     
     init() {
         
