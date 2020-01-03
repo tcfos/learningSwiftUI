@@ -8,11 +8,15 @@ This project shows how to write data to a file in a shared container and
 how read the file again.
 
 ## Prerequisite
-You need to register an app group.
+You need to register an app group. The documentation explains the details and the steps: https://developer.apple.com/documentation/xcode/adding_capabilities_to_your_app
 
 ## The Problem
-Deprecated in iOS13: NSKeyedUnarchiver.unarchiveObjects(withFile path: String) -> Any?
+In a previous project I used NSKeyedUnarchiver.unarchiveObjects(withFile path: String) 
+to read from a file in a shared container. Unfortunately this function is now deprecated in iOS 13.
+From the Xcode developer documentation I found NSKeyedUnarchiver.unarchiveTopLevelObjectWithData 
+as an alternative function, but using it in my project seemed to be tricky.
 
-Use NSKeyedUnarchiver.unarchiveTopLevelObjectWithData instead – but how? 
 This project shows how to write data to a file in a shared container and
 how read the file again. 
+
+Documentation: https://developer.apple.com/documentation/foundation/nskeyedunarchiver?language=swift
