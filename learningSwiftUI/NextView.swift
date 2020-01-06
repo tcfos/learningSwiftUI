@@ -30,19 +30,20 @@ struct HomeView: View {
   
     var body: some View {
         TabView(selection: $selection) {
-            Text("Text 1").onTapGesture(count: 2){
+            Text("Click me").onTapGesture(count: 1){
                 self.navigation.advance(NavigationItem(view: AnyView(NextView())))
                 }
             .tabItem {
-                      Image(systemName: selection == 0 ? "1.square.fill" : "1.square")
+                Image(systemName: selection == 0 ? "1.square.fill" : "1.square")
             }.tag(0)
-        // 2nd screen
-            Text("Text 2")
-                .tabItem {
-                    Image(systemName: selection == 1 ? "2.square.fill" : "2.square")
-                }.tag(1)
 
-        // settings view
+            Text("DoubleTap me").onTapGesture(count: 2){
+                self.navigation.advance(NavigationItem(view: AnyView(NextView())))
+            }
+            .tabItem {
+                Image(systemName: selection == 1 ? "2.square.fill" : "2.square")
+            }.tag(1)
+
             Text("Text 3")
                 .tabItem {
                     Image(systemName: selection == 2 ? "3.square.fill" : "3.square")
@@ -58,7 +59,7 @@ struct NextView: View {
   
      var body: some View {
          VStack{
-       BackView( title: "I am Next View",  action:{
+       BackView( title: "Next View",  action:{
            self.navigation.unwind()
               }, homeAction: {
                  self.navigation.home()
@@ -69,12 +70,6 @@ struct NextView: View {
    }
     }
 }
-
-
-
-
-
-
 
 
 
@@ -138,10 +133,6 @@ final class NavigationStack: ObservableObject  {
 
 
 
-
-
-
-
 struct BackView: View{
     var title: String
     var action: ()->Void
@@ -166,10 +157,3 @@ struct BackView: View{
         }
     }
 }
-
-
-
-
-
-
-
