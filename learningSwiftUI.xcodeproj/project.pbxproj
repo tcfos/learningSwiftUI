@@ -16,6 +16,7 @@
 		505F054B23BDFCA90032B776 /* learningSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F054A23BDFCA90032B776 /* learningSwiftUITests.swift */; };
 		505F055623BDFCD00032B776 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F055523BDFCD00032B776 /* Storage.swift */; };
 		505F055823BDFE620032B776 /* PersistenceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F055723BDFE620032B776 /* PersistenceTest.swift */; };
+		7E4C9C4723C39D9000515E63 /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4C9C4623C39D9000515E63 /* NextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		505F055523BDFCD00032B776 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		505F055723BDFE620032B776 /* PersistenceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersistenceTest.swift; sourceTree = "<group>"; };
 		505F055923BE2D640032B776 /* learningSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = learningSwiftUI.entitlements; sourceTree = "<group>"; };
+		7E4C9C4623C39D9000515E63 /* NextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
 		7E4F6A2223BE384500530294 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +91,7 @@
 				505F053323BDFCA50032B776 /* AppDelegate.swift */,
 				505F053523BDFCA50032B776 /* SceneDelegate.swift */,
 				505F053723BDFCA50032B776 /* ContentView.swift */,
+				7E4C9C4623C39D9000515E63 /* NextView.swift */,
 				505F055523BDFCD00032B776 /* Storage.swift */,
 				505F053923BDFCA90032B776 /* Assets.xcassets */,
 				505F053E23BDFCA90032B776 /* LaunchScreen.storyboard */,
@@ -219,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				505F053423BDFCA50032B776 /* AppDelegate.swift in Sources */,
+				7E4C9C4723C39D9000515E63 /* NextView.swift in Sources */,
 				505F055623BDFCD00032B776 /* Storage.swift in Sources */,
 				505F053623BDFCA50032B776 /* SceneDelegate.swift in Sources */,
 				505F053823BDFCA50032B776 /* ContentView.swift in Sources */,
