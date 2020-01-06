@@ -18,13 +18,13 @@ class storage {
     }
     
     
-    func persist(withNumbers : [String], withFilename: String = "" ) {
+    func persist(modelData : [String], withFilename: String = "" ) {
         
         let filename : String = (withFilename.count == 0 ? fileName : withFilename)
         let directory : URL = FileManager.sharedContainerURL()
         let fullPath = directory.appendingPathComponent(filename)
         do {
-            try NSKeyedArchiver.archivedData(withRootObject: withNumbers, requiringSecureCoding: false).write(to: fullPath)
+            try NSKeyedArchiver.archivedData(withRootObject: modelData, requiringSecureCoding: false).write(to: fullPath)
         } catch {
       
         }
